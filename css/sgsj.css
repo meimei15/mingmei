@@ -1,0 +1,1524 @@
+/*通用属性*/
+body {
+    font:12px "microsoft yahei" ,Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+    height:2000px;
+    position: relative;
+    background-size:1300px;
+    backgroung-color:#F9F9F9;
+}
+
+a{color:#666;
+  text-decoration:none;
+}
+
+a:hover{
+    color:#ff0700;
+}
+img{
+    vertical-align:bottom;
+}
+
+/*取消 某些元素 默认的 margin， padding，列表项标志*/
+p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.margin{
+    margin-left:-250px;
+}
+.lf{float:left;}
+.rf{float:right;}
+.clear{clear:both;}
+
+#top_main,#nav,#banner,#main,#footer_box,#footer{
+    /*宽度，水平居中对齐*/
+    width:1200px;
+    margin:0 auto;}
+
+
+#top{
+    height:40px;
+    width:100%;
+    border:1px solid #C9C9C9;
+    position:fixed;
+    top:0;
+    z-index: 50;
+    background:#fff;
+}
+#top>ul{
+    margin:0 auto;
+    width:1025px;
+}
+#top>ul>li{
+    float:left;
+    height:40px;
+    line-height:40px;
+    width:205px;
+}
+#top>ul>li:first-child>a{
+    display: block;
+    height:100%;
+    background:url(../AGE_files/bg-image/ost-bg.png) no-repeat 0 -38px;
+}
+#top>ul>li:nth-child(4),
+#top>ul>li:nth-child(5){
+    width:50px;
+    text-align:center;
+}
+#top>ul>li:nth-child(2){
+    width:230px;
+    position:relative;
+    z-index: -1;
+    text-align: center;
+}
+
+#top>ul>li:nth-child(3){
+    text-align: right;
+    width: 250px;
+}
+#top>ul>li>h3{
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: center;
+    text-indent: 0!important;
+    line-height: 40px;
+    position:relative;
+}
+#game{
+    position: absolute;
+    top:40px;
+    left:435px;
+    width: 698px;
+    height: 456px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "\5b8b\4f53",sans-serif;
+    color: #999;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: none;
+
+}
+#game:before {
+    border-bottom: 7px solid #CCC;
+    border-left: 7px dashed transparent;
+    border-right: 7px dashed transparent;
+    right: 1px;
+    top: -7px;
+    /*background:red;*/
+    content: '';
+    position: absolute;
+}
+#top>ul>li>h3>i{
+    width: 11px;
+    height: 11px;
+    background:url(../AGE_files/bg-image/ost-bg.png) no-repeat;
+    background-position: -150px -134px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .1em;
+}
+
+/* 背景图 */
+div.wrap{
+	position: relative;
+    margin-top:42px;
+    width: 100%;
+    /*min-width: 1000px;*/
+    background: url(../AGE_files/bg-image/bg_wrap1.jpg) center 0 no-repeat;
+    background-color: #f0f0f0;
+}
+@media screen and (max-width: 767px) {
+    div.wrap{
+        position: relative;
+        margin-top:42px;
+        width: 125%;
+        /*min-width: 1000px;*/
+        background: url(../AGE_files/bg-image/bg_wrap1.jpg) center 0 no-repeat;
+        background-color: #f0f0f0;
+    }
+}
+div.bg{
+	position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1000px;
+    height: 824px;
+    background: url(../AGE_files/bg-image/bg1.jpg) center 0 no-repeat;
+    margin-left: -500px;
+    z-index: 1;
+}
+div.main{
+    width:1200px;
+    min-height:2340px;
+    margin:0 auto;
+    position:relative;
+    z-index:2;
+}
+#top_main{
+    width:1200px;
+    height:490px;
+}
+#top_main>div.top_box{
+    width:1200px;
+    overflow:hidden;
+    padding-top:25px;
+}
+#top_main>div.top_box>a{
+    width:96px;
+    height:110px;
+    border:2px solid transparent;
+    float:left;
+    margin:0 50px;
+    background:url(../AGE_files/bg-image/logo.png)
+}
+#top_main>div.top_box div{
+    width:1000px;
+    height:210px;
+    margin-left:0px;
+}
+#top_main>div.top_box dl{
+    float:left;
+    width:100px;
+    text-align:center;
+}
+#top_main>div.top_box dl dt,#top_main>div.top_box dl dd{
+    height:30px;
+    line-height:30px;
+}
+dt.small{
+    font-family:"FangSong";
+    font-weight:500;
+}
+#top_main>div.top_box dl dt b{
+    font-size:14px;
+}
+#top_main>div.top_box dl dd{
+    font-size:13px;
+
+}
+#top_main>div.top_box dl dd a{
+    position:relative;
+}
+b.ico-hot,b.ico {
+    position: absolute;
+    top: 3px;
+    right: -15px;
+    width: 12px;
+    height: 12px;
+    background: #f0562d;
+    line-height: 12px;
+    color: #fff;
+    font-family: '\9ED1\4F53';
+    font-weight: 500;
+}
+b.ico-hot:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 3px;
+    border-style: dashed solid dashed dashed;
+    border-width: 3px;
+    border-color: transparent #f0562d transparent transparent;
+}
+b.ico:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 3px;
+    border-style: dashed solid dashed dashed;
+    border-width: 3px;
+    border-color: transparent #f0990c transparent transparent;
+}
+b.ico{
+    background: #f0990c;
+
+}
+
+
+
+
+
+
+#nav{
+    overflow:hidden;
+}
+#nav>div.side_top{
+    width:270px;
+    height:333px;
+    background:url(../AGE_files/bg-image/item.png);
+    float:left;
+}
+#nav>div.side_top>a{
+    display: block;
+    height: 145px;
+    width: 100%;
+}
+
+
+#nav>div.side_top>ul{
+    height:188px;
+}
+#nav>div.side_top>ul li{
+    height:94px;
+    width:135px;
+    float:left;
+    font-size:18px;
+    fontweight:bold;
+    position:relative;
+}
+#nav>div.side_top>ul li a{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #e1e1e1;
+    line-height: 125px;
+    text-align: center;
+}
+#nav>div.side_top>ul li a:hover{
+    background:rgba(255,255,255,.2);
+}
+#nav>div.side_top>ul li p{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+#nav>div.side_top>ul li p:hover {
+    background: #fff;
+    opacity: 0.2;
+    cursor:pointer;
+}
+/*滑动轮播*/
+#nav>div.slider_box{
+    width:620px;
+    height:307px;
+    margin-top:26px;
+    position:relative;
+}
+#nav>div.slider_box>ul.choice{
+    position:relative;
+    z-index: 100;
+}
+#nav>div.slider_box>ul.choice>li{
+    display:inline-block;
+    color:#fff;
+    font-weight:bold;
+    font-size:14px;
+    width:50px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+	cursor:pointer;
+}
+.fade{
+    background:#e4393c;
+}
+.in{
+    background:#000;
+}
+#G_slider{
+    background:green;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+}
+#H_slider{
+    background:red;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+}
+
+
+
+#nav>div.ads{
+    float:right;
+    height:307px;
+    width:310px;
+    margin-top:26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main{
+    margin-top:15px;
+    min-height:200px;
+    background: rgba(0, 0, 251, 0.18);
+    overflow:hidden;
+}
+#main>ul.list{
+    width:271px;
+    height:312px;
+    padding-left:1px;
+}
+#main>ul.list>li{
+    width:134px;
+    height:77px;
+    background:#302D2E;
+    float:left;
+    text-align:center;
+
+    font-weight:bold;
+    font-size:14px;
+}
+#main>ul.list>li:not(:nth-child(7)){
+    border-bottom:1px solid #403F3F;
+}
+#main>ul.list>li:last-child{
+    border-bottom:none;
+}
+#main>ul.list>li:nth-child(1){
+    border-right:1px solid #403F3F;
+}
+#main>ul.list>li:nth-child(3){
+     border-right:1px solid #403F3F;
+ }
+ #main>ul.list>li:nth-child(5){
+     border-right:1px solid #403F3F;
+ }
+ #main>ul.list>li:nth-child(7){
+     border-right:1px solid #403F3F;
+ }
+
+#main>ul.list>li>a{
+    display:block;
+    width:132px;
+    height:63px;
+    line-height:63px;
+    color:#fff;
+    padding-left:2px;
+    margin:7px auto;
+}
+#main>ul.list>li>a:hover{
+    border-left:2px solid #D75615;
+    color:#D75615;
+    padding:0;
+}
+
+
+/*新闻*/
+#main div.news_wrap{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 600px;
+    height: 312px;
+    margin-left:20px;
+    background:#fff;
+}
+
+#main div.news_wrap>ul{
+    height: 30px;
+    width: 100%;
+    padding-top: 6px;
+    border-bottom: solid 1px #d9dbdb;
+
+}
+#main div.news_wrap>ul>li{
+    float: left;
+    width: 75px;
+    height: 16px;
+    line-height: 16px;
+    border-right: dashed 1px #d9dbdb;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#main div.news_wrap>ul>li:hover{
+    color: #eb6f01;
+}
+#main div.news_wrap>ul>a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Arial';
+    color: #000;
+    transform: scale(.8);
+}
+#main div.news_wrap>ul>a span {
+    float: right;
+    margin: 0 5px;
+    font-size: 20px;
+    color: #f6590d;
+    font-weight: 700;
+    line-height: 36px;
+}
+#main div.news_wrap>div#box{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 440px;
+    padding: 20px 0 0 0;
+    min-height:274px;
+}
+div#box>div#zuixin,
+div#box>div#news,
+div#box>div#gonggao,
+div#box>div#meiti,
+div#box>div#huodong{
+    width: 440px;
+    background: rgba(255, 192, 203, 0.21);
+    min-height:200px;
+    z-index: 9;
+    position:absolute;
+    top:20px;
+    left:0;
+}
+div#box>div#news{
+    background: rgba(255, 0, 0, 0.2);
+    z-index: 10;
+}
+div#box>div#gongao{
+    background: rgba(0, 0, 0, 0.22);
+    z-index: 11;
+}
+div#box>div#meiti{
+    background: rgba(0, 128, 0, 0.21);
+    z-index: 12;
+}
+div#box>div#huodong{
+    background: rgba(255, 255, 0, 0.2);
+    z-index: 13;
+}
+#main div.news_wrap>img{
+    float:right;
+    margin-top:20px;
+}
+/*隐藏*/
+#main div.news_wrap>div#box>div.hide{
+    opacity:0;
+    transition:opacity .5s linear
+ }
+/*显示*/
+#main div.news_wrap>div#box>div.show {
+    opacity: 1;
+    z-index: 15;
+}
+#zuixin>ul,
+#news>ul,
+#gonggao>ul,
+#meiti>ul,
+#huodong>ul{
+    padding-left:10px;
+}
+#zuixin>ul>li,
+#news>ul>li,
+#gonggao>ul>li,
+#meiti>ul>li,
+#huodong>ul>li{
+    height: 35px;
+    border-bottom: dashed 1px #d9dbdb;
+    line-height: 35px;
+    color: #4b4d52;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#zuixin>ul>li:first-child,
+#news>ul>li:first-child,
+#gonggao>ul>li:first-child,
+#meiti>ul>li:first-child,
+#huodong>ul>li:first-child
+{
+    font-size: 16px;
+    font-weight: 700;
+    color: #eb6f01;
+}
+#zuixin>ul>li>span,
+#news>ul>li>span,
+#gonggao>ul>li>span,
+#meiti>ul>li>span,
+#huodong>ul>li>span
+{
+    float: right;
+}
+
+
+
+
+#main div.news_temple{
+    position: relative;
+    float: right;
+    width: 290px;
+    height: 312px;
+    background: #F0F0F0;
+}
+#main div.news_temple>div.tit{
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 1px #ccc;
+}
+#main div.news_temple>div.tit h2{
+    float: left;
+    font-size: 18px;
+    color: #353535;
+    text-indent: 33px;
+}
+#main div.news_temple>div.tit h2 i{
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    background:url(../AGE_files/bg-image/1.png);
+}
+#main div.news_temple>div.tit p{
+    float: left;
+    color: #b8b8b8;
+    margin-left: 4px;
+}
+#main div.news_temple>div.tit p b{
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+}
+#main div.news_temple>div.tit p span{
+    display: inline-block;
+    height: 28px;
+    padding-top: 8px;
+    margin-left:10px;
+    line-height: 11px;
+}
+#main div.news_temple>div.tit p span i {
+    font-size: 18px;
+    font-style: normal;
+}
+#main div.news_temple div.tit>a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Arial';
+    color: #000;
+    transform: scale(.8);
+}
+#main div.news_temple div.tit>a span {
+    float: right;
+    margin: 0 5px;
+    font-size: 20px;
+    color: #f6590d;
+    font-weight: 700;
+    line-height: 36px;
+}
+#main div.news_temple>p.first_news{
+    margin: 20px 0 5px 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#main div.news_temple>p.second_news{
+    text-align: right;
+    border-right: solid 1px #828282;
+}
+#main div.news_temple>p.second_news,#main div.news_temple>p.third_news{
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    width: 46%;
+    padding: 0 4px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#main div.news_temple>div.ad_box{
+
+}
+#main div.news_temple>div.ad_box{
+    padding:25px 5px;
+}
+#main div.news_temple p.news {
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+#footer_box{
+    margin-top:15px;
+    background: rgba(234, 169, 255, 0.49);
+}
+#footer_box:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+#aside {
+    width: 269px;
+    min-height: 785px;
+    background: #7ceee6;
+    float:left;
+}
+#aside:before{
+    content: '';
+    display: table;
+}
+#aside>div.game-app{
+    position:relative;
+    width:267px;
+    height:218px;
+    border:1px solid #cccccc;
+}
+#aside>div.game-app img{
+    float:left;
+    margin-top: 35px;
+    margin-left: 15px;
+    border: solid 2px #ccc;
+    width: 144px;
+    height: 144px;
+}
+#aside>div.game-app h3 {
+    float:left;
+    margin-top: 55px;
+    margin-left:15px;
+    font-size: 16px;
+    color: #eb6f01;
+}
+#aside>div.game-app p {
+    width: 80px;
+    float:left;
+    margin:35px 0 0 15px;
+    font-size: 14px;
+    color: #848484;
+}
+#aside>div.guild-rank{
+    overflow:hidden;
+}
+#aside>div.guild-rank .tit {
+    position: relative;
+    margin: 30px 10px 10px;
+}
+#aside>div.guild-rank .tit {
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 1px #ccc;
+}
+#aside>div.guild-rank .tit h2 {
+    float: left;
+    font-size: 18px;
+    color: #353535;
+    text-indent: 33px;
+}
+#aside>div.guild-rank .ico-tit {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    background: url(../AGE_files/bg-image/1.png);
+}
+#aside>div.guild-rank .tit-word {
+    float: left;
+    color: #b8b8b8;
+    margin-left:4px;
+}
+#aside>div.guild-rank .tit-word span {
+    display: inline-block;
+    height: 36px;
+    padding-top: 8px;
+    line-height: 11px;
+    -webkit-transform: scale(.8);
+}
+#aside>div.guild-rank .tit-word b {
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+}
+#aside>div.guild-rank table{
+    border-collapse:collapse;
+    width:242px;
+    height:364px;
+    margin:0 auto;
+}
+#aside>div.guild-rank th{
+    text-align:left;
+    height:26px;
+    line-height:26px;
+    color:#fff;
+    background:#EB6F01;
+    padding:0;
+}
+#aside>div.guild-rank th:nth-child(2){
+    width:147px;
+}
+#aside>div.guild-rank th:first-child{
+    width:35px;
+}
+#aside>div.guild-rank td{
+    text-align:left;
+    height:30px;
+    line-height:30px;
+    color:#fff;
+    padding:0;
+}
+#aside>div.guild-rank td:first-child{
+    width:35px;
+}
+#aside>div.guild-rank td:nth-child(2){
+     width:147px;
+     color:#000;
+}
+#aside>div.guild-rank td:last-child{
+    color:#000;
+}
+#aside>div.guild-rank td:nth-child(2) p{
+    width:145px;
+    overflow:hidden;
+    height:30px;
+    padding-right:2px;
+}
+#aside>div.guild-rank td:first-child span{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    background: #eb6f01;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+}
+#aside>div.guild-rank a.page {
+    float: right;
+    margin: 10px 10px;
+}
+#aside>div.game-coop {
+    margin: 1px;
+    padding: 30px 10px;
+    height: 30px;
+    background: #ececec;
+}
+
+#aside>div.game-coop ul {
+    position: absolute;
+    width: 240px;
+    overflow: hidden;
+    background: #ececec;
+    border: solid 2px #c8c8c8;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 5px;
+    font-size: 14px;
+}
+#aside>div.game-coop ul:before {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    border-style: solid dashed dashed dashed;
+    border-width: 6px;
+    border-color: #c8c8c8 transparent transparent transparent;
+}
+#aside>div.game-coop ul a{
+    display:block;
+}
+#footer_box>div.game-info{
+    margin-left:20px;
+}
+#footer_box>div.game-info ul{
+    height:302px;
+    overflow:hidden;
+}
+#footer_box>div.game-info li{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 74px;
+    height: 300px;
+    border: solid 1px #dadada;
+    margin-left: -1px;
+    background:#fff;
+}
+#footer_box>div.game-info li:hover {
+    border-color: #a5a5a5;
+    z-index: 10;
+    transition: all .5s;
+}
+div.game-info i{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 6px;
+    height: 28px;
+    border-left: solid 1px #bfbfbf;
+    border-top: solid 1px #bfbfbf;
+}
+div.game-info a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+div.game-info a:before{
+    content:"";
+    display:table;
+}
+div.game-info h4{
+    position: relative;
+    height: 105px;
+    margin: 30px 0 0 30px;
+    width: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 10;
+}
+div.game-info h4 span {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -37px;
+    width: 75px;
+    font-size: 12px;
+    color: #cecece;
+    text-align: left;
+    font-weight: 500;
+    -webkit-transform: scale(.8) rotate(90deg) translateY(20px) translateX(-80px);
+}
+#footer_box>div.lunbo{
+    float:right;
+    width:290px;
+    height:302px;
+    background:#fff;
+}
+#footer_box>div.video-wrap{
+    background:#F9F9F9;
+    float:left;
+    width:600px;
+    height:304px;
+    margin:15px 0 0 20px;
+}
+#footer_box>div.video-wrap ul.tab-hd {
+    height: 30px;
+    width: 100%;
+    padding-top: 6px;
+    border-bottom: solid 1px #d9dbdb;
+    margin-bottom: 10px;
+    position:relative;
+}
+#footer_box>div.video-wrap ul.tab-hd li{
+    width:111px;
+    height:30px;
+    float:left;
+    font-size:16px;
+    text-align:center;
+    font-weight:bold;
+}
+#footer_box>div.video-wrap ul.tab-hd>a{
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Arial';
+    color: #000;
+    transform: scale(.8);
+}
+#footer_box>div.video-wrap ul.tab-hd>a span{
+    float: right;
+    margin: 0 5px;
+    font-size: 20px;
+    color: #f6590d;
+    font-weight: 700;
+    line-height: 36px;
+}
+#footer_box>div.video-wrap ul.tab-hd li:first-child a{
+    color:#EB6F01;
+    display:block;
+    border-right:1px dotted #aaa;
+}
+div.video-panel ul{
+    overflow:hidden;
+}
+div.video-panel ul li{
+    float:left;
+    margin:20px 0 0 20px;
+    position:relative;
+}
+
+div.video-panel ul li img{
+    width:174px;
+    height:103px;
+}
+div.video-panel ul li p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 18px;
+    width: 100%;
+    background: #000;
+    line-height: 18px;
+    color: #b8b8b8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+div.video-panel ul li i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 25px;
+    height: 31px;
+    background: url(../AGE_files/bg-image/play.png);
+    margin-left: -12px;
+    margin-top: -15px;
+}
+#footer_box>div.right_side{
+    width:289px;
+    height:297px;
+    float:right;
+    margin-top:20px;
+    background:#fff;
+}
+#footer_box>div.right_side ul{
+    overflow: hidden;
+    width:290px;
+}
+#footer_box>div.right_side li{
+    float: left;
+    width: 143px;
+    height: 73px;
+    border-right: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+    background: #ededed;
+}
+#footer_box>div.right_side li:nth-child(1){
+    border-top: solid 1px #dadada;
+    border-left: solid 1px #dadada;
+}
+#footer_box>div.right_side li:nth-child(2){
+    border-top: solid 1px #dadada;
+}
+#footer_box>div.right_side li:nth-child(3){
+    border-left: solid 1px #dadada;
+}
+#footer_box>div.right_side li:nth-child(5){
+    border-left: solid 1px #dadada;
+}
+#footer_box>div.right_side li:nth-child(7){
+    border-left: solid 1px #dadada;
+}
+#footer_box>div.right_side li a{
+    display:block;
+    height:100%;
+    line-height:73px;
+}
+#footer_box>div.right_side li>a>b{
+    float: left;
+    width: 55px;
+    height: 30px;
+    margin-top: 20px;
+    background: url(../AGE_files/bg-image/ico-spr.jpg);
+}
+#footer_box>div.right_side li:nth-child(2)>a>b{
+    background-position: -60px 0;
+}
+#footer_box>div.right_side li:nth-child(3)>a>b{
+    background-position: 0 -30px;
+}
+#footer_box>div.right_side li:nth-child(4)>a>b{
+    background-position: -60px -30px;
+}
+#footer_box>div.right_side li:nth-child(5)>a>b{
+    background-position: 0px -60px;
+}
+#footer_box>div.right_side li:nth-child(6)>a>b{
+    background-position: -60px -60px;
+}
+#footer_box>div.right_side li:nth-child(7)>a>b{
+    background-position: 0px -90px;
+}
+#footer_box>div.right_side li:nth-child(8)>a>b{
+    background-position: -60px -90px;
+}
+#footer_box>div.bbs{
+    position: relative;
+    float: left;
+    width: 600px;
+    height: 475px;
+    margin: 20px 0 0 20px;
+    background:#fff;
+}
+#footer_box>div.bbs>div.tit{
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 1px #ccc;
+}
+#footer_box>div.bbs>div.tit h2{
+    float: left;
+    font-size: 18px;
+    color: #353535;
+    text-indent: 33px;
+}
+#footer_box>div.bbs>div.tit h2 i{
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    background:url(../AGE_files/bg-image/1.png);
+}
+#footer_box>div.bbs>div.tit p{
+    float: left;
+    color: #b8b8b8;
+    margin-left: 4px;
+}
+#footer_box>div.bbs>div.tit p b{
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+}
+#footer_box>div.bbs>div.tit p span{
+    display: inline-block;
+    height: 28px;
+    padding-top: 8px;
+    margin-left:10px;
+    line-height: 11px;
+}
+#footer_box>div.bbs>div.tit p span i {
+    font-size: 18px;
+    font-style: normal;
+}
+#footer_box>div.bbs div.tit>a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Arial';
+    color: #000;
+    transform: scale(.8);
+}
+#footer_box>div.bbs div.tit>a span {
+    float: right;
+    margin: 0 5px;
+    font-size: 20px;
+    color: #f6590d;
+    font-weight: 700;
+    line-height: 36px;
+}
+#footer_box>div.bbs>div.coop_list{
+    overflow: hidden;
+    width: 100%;
+    height: 380px;
+    background: url(../AGE_files/bg-image/coop-bg.jpg) right 0;
+}
+#footer_box>div.bbs>div.coop_list>div.coop_hd{
+    overflow: hidden;
+    margin-top: 30px;
+    background:#ddd;
+}
+#footer_box>div.bbs>div.coop_list>div.coop_hd h4{
+    float: left;
+    margin-left: 69px;
+    width: 125px;
+    font-size: 20px;
+    color: #444343;
+    text-align: center;
+}
+#footer_box>div.bbs>div.coop_list>div.coop_hd h4 span{
+    display: block;
+    font-size: 18px;
+    color: #eb6f01;
+}
+#footer_box>div.bbs>div.coop_list>div.coop_hd p {
+    float: left;
+    width: 220px;
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+    color: #444444;
+}
+#footer_box>div.bbs>div.coop_list>div.coop_hd p span{
+    margin-left: 10px;
+    padding: 0 5px;
+    border-bottom: solid 1px #eb6f01;
+}
+#footer_box>div.bbs>div.coop_list>div.coop_hd a{
+    float: right;
+    width: 97px;
+    height: 34px;
+    background: #eb6f01;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px 20px 0 0;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 3px;
+}
+#coopList{
+    float: left;
+    width: 245px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background:transparent;
+}
+#coopList>li{
+    float: left;
+    width: 60px;
+    margin: 5px 20px 0 0;
+    height: 60px;
+}
+#coopList>li>a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../AGE_files/bg-image/ico-avatar.png);
+}
+#coopList>li.choose-1>a{
+    background-position: 0 -240px;
+}
+#coopList>li:nth-child(2)>a{
+    background-position:-60px 0;
+}
+#coopList>li:nth-child(3)>a{
+    background-position:-120px 0;
+}
+#coopList>li:nth-child(4)>a{
+    background-position:0px -60px;
+}
+#coopList>li:nth-child(5)>a{
+    background-position:-60px -60px;
+}
+#coopList>li:nth-child(6)>a{
+    background-position:-120px -60px;
+}
+#coopList>li:nth-child(7)>a{
+    background-position:0px -120px;
+}
+#coopList>li:nth-child(8)>a{
+    background-position:-60px -120px;
+}
+#coopList>li:nth-child(9)>a{
+    background-position:-120px -120px;
+}
+#coopList>li:nth-child(10)>a{
+    background-position:0px -180px;
+}
+#coopList>li.choose-2>a:hover{
+z-index: 10;
+background-position: 0 0;
+}
+#coopList>li:nth-child(2)>a:active{
+    background-position: -60px -240px;
+}
+#coopList>li:nth-child(3)>a:active{
+    background-position: -120px -240px;
+}
+#coopList>li:nth-child(4)>a:active{
+    background-position: 0px -300px;
+}
+#coopList>li:nth-child(5)>a:active{
+    background-position: -60px -300px;
+}
+#coopList>li:nth-child(6)>a:active{
+    background-position: -120px -300px;
+}
+#coopList>li:nth-child(7)>a:active{
+    background-position: 0px -360px;
+}
+#coopList>li:nth-child(8)>a:active{
+    background-position: -60px -360px;
+}
+#coopList>li:nth-child(9)>a:active{
+    background-position: -120px -360px;
+}
+#coopList>li:nth-child(10)>a:active{
+    background-position: -60px -180px;
+}
+#coopList>li.liang:first-child>a{
+    background-position: 0 -240px;
+}
+#coopList>li.liang:nth-child(2)>a{
+    background-position: -60px -240px;
+}
+#coopList>li.liang:nth-child(3)>a{
+    background-position: -120px -240px;
+}
+#coopList>li.liang:nth-child(4)>a{
+    background-position: 0px -300px;
+}
+#coopList>li.liang:nth-child(5)>a{
+    background-position: -60px -300px;
+}
+#coopList>li.liang:nth-child(6)>a{
+    background-position: -120px -300px;
+}
+#coopList>li.liang:nth-child(7)>a{
+    background-position: 0px -360px;
+}
+#coopList>li.liang:nth-child(8)>a{
+    background-position: -60px -360px;
+}
+#coopList>li.liang:nth-child(9)>a{
+    background-position: -120px -360px;
+}
+#coopList>li.liang:nth-child(10)>a{
+    background-position: -60px -180px;
+}
+#coopList>li>a>span{
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 68px;
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+#footer_box svg{
+    float:left;
+    margin:20px 0 0 25px;
+}
+
+
+
+#footer_box>div.community{
+    width:280px;
+    height:380px;
+    float:right;
+    background:#F7F7F7;
+    padding-left:10px;
+    margin-top:20px;
+}
+#footer_box>div.community>div.tit{
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 1px #ccc;
+}
+#footer_box>div.community>div.tit h2{
+    float: left;
+    font-size: 18px;
+    color: #353535;
+    text-indent: 33px;
+}
+#footer_box>div.community>div.tit h2 i{
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    background:url(../AGE_files/bg-image/1.png);
+}
+#footer_box>div.community>div.tit p{
+    float: left;
+    color: #b8b8b8;
+    margin-left: 4px;
+}
+#footer_box>div.community>div.tit p b{
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+}
+#footer_box>div.community>div.tit p span{
+    display: inline-block;
+    height: 28px;
+    padding-top: 8px;
+    margin-left:10px;
+    line-height: 11px;
+}
+#footer_box>div.community>div.tit p span i {
+    font-size: 18px;
+    font-style: normal;
+}
+#footer_box>div.community div.tit>a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Arial';
+    color: #000;
+    transform: scale(.8);
+}
+#footer_box>div.community div.tit>a span {
+    float: right;
+    margin: 0 5px;
+    font-size: 20px;
+    color: #f6590d;
+    font-weight: 700;
+    line-height: 36px;
+}
+#footer_box>div.community ul {
+    margin-top: 10px;
+}
+#footer_box>div.community li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: dashed 1px #b5b6b8;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    width:1000px;
+    margin-top:15px;
+    background:transparent;
+    min-height:150px;
+    margin-botton:20px;
+    padding:0 100px;
+    padding-right:100px;
+    position:relative;
+}
+.tg, .xlg, .crytek {
+    display: block;
+    float: left;
+    width: 126px;
+    height: 24px;
+    background: url(../AGE_files/bg-image/copyright.png) no-repeat;
+}
+.tg{
+    margin-left:15px;
+}
+.xlg{
+    width: 111px;
+    background-position: 0 -28px;
+    margin-left: 24px;
+}
+.crytek {
+    width: 103px;
+    height: 34px;
+    background-position: 0 -61px;
+    float: none;
+    cursor:pointer;
+    position: absolute;
+    left: 180px;
+    top: 34px;
+}
+#footer>div.footer_detail{
+    width:675px;
+    height:100px;
+    float:left;
+    margin-left:15px;
+}
+#footer>div.footer_detail p{
+    height:20px;
+    line-height:20px;
+}
+#footer>div.footer_detail p span{
+    padding-left:5px;
+}
+#footer>div.footer_detail>p.footer_sp{
+    background:#ddd;
+    float:left;
+    clear: both;
+    padding: 0 5px;
+    font-family: "Arial";
+}
+#footer>div.footer_detail>p.footer_right{
+    float:right;
+    font-family: "YouYuan";
+    font-weight:bold;
+}
+#footer>div.footer_detail p.footer_small{
+    height:40px;
+}
+#tengxun{
+    width:100px;
+    height:53px;
+    position:fixed;
+    right:0;
+    bottom:0;
+    z-index: 50;
+}
+#tengxun>a{
+    display:block;
+    height:100%;
+    background:url(../AGE_files/bg-image/ost-bg.png) no-repeat 0 -160px;
+}

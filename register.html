@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+  <title>注册新用户 — 上古世纪</title>
+  <link rel="icon" href="imges_files/ico.png" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico"/>
+  <link rel="stylesheet" href="css/register&login.css"/>
+</head>
+<body>
+  <!--页头-->
+  <div class="header">
+    <div class="container">
+      <a href="#" class="logo"></a>
+      <span class="welcome">欢迎注册</span>
+    </div>
+  </div>
+
+  <!--主体-->
+  <div class="main">
+    <video class="video-bg" src="res/snow.mp4"  loop muted></video>
+    <div class="container">
+      <div class="form-container">
+        <form class="form-2">
+          <div class="form-group">
+            <label class="control-label" for="uname1">用户名：</label>
+            <input class="form-control" id="uname1" autofocus required autocomplete="off"              minlength="6" maxlength="9" type="text"placeholder="手机号/邮箱/QQ"/>
+            <span class="help-block bg-default">用户名长度在6~9位之间</span>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="upwd1">密码：</label>
+            <input class="form-control" id="upwd1" type="password"placeholder="请输入密码"/>
+            <span class="help-block bg-default">密码长度在6~9位之间</span>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="upwd2">请再次输入密码：</label>
+            <input class="form-control" id="upwd2" type="password" placeholder="请再次输入密码"/>
+            <span class="help-block bg-default">密码长度在6~9位之间</span>
+          </div>
+          <div class="form-group">
+            <label class="control-label">请验证码：</label>
+            <input class="form-control" id="upwd3" type="txt" placeholder="请输入验证码"/>
+            <span><canvas id="c2"></canvas></span>
+          </div>
+          <span class="control-label"></span>
+          <input class="btn btn-danger" type="reset" value="清空输入">
+          <input class="btn btn-success denglu" type="button" id="bt-submit" value="提交">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--页尾-->
+  <div class="footer">
+    <div class="container">
+
+    </div>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/register.js"></script>
+  <script>
+    //使用JS对象属性设置宽和高
+    var w = 100;
+    var h = 30;
+    c2.width = w;
+    c2.height = h;
+    var ctx = c2.getContext('2d');
+
+    ctx.textBaseline = 'top';
+
+
+    //绘制背景绘制
+    ctx.fillStyle = rc(160,240);
+    ctx.fillRect(0,0,w,h);
+
+    //绘制文字
+    var src = 'ABCDEFGHIJKLMNPQRSTUVWXY23456789';
+    var arr=[];
+    for(var i=0; i<5; i++){
+      var c = src[rn(0,src.length)];
+      ctx.fillStyle = rc(30,160);
+      var f = rn(10,30);//字体大小
+      ctx.font = f+'px SimHei';
+      arr.push(c);
+      var x = 20*i+3;     //文字左上角的坐标
+      var y = rn(-3,13);  //文字左上角的坐标
+      //让文字绕着自己的中心旋转一定角度
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate( rn(-30,30)*Math.PI/180 );
+      //ctx.fillText(c, x, y);
+      ctx.fillText(c, 0, 0);
+      ctx.restore();
+    }
+    console.log(arr);
+
+    //绘制干扰线
+    for(var i=0; i<6; i++){
+      ctx.beginPath();
+      ctx.moveTo(rn(0,w), rn(0,h));
+      ctx.lineTo(rn(0,w), rn(0,h));
+      ctx.strokeStyle = rc(30,160);
+      ctx.stroke();
+    }
+
+    //绘制杂色干扰点——半径为1的圆
+    for(var i=0; i<100; i++){
+      ctx.beginPath();
+      ctx.arc(rn(0,w),rn(0,h),1, 0, 2*Math.PI);
+      ctx.fillStyle = rc(30,250);
+      ctx.fill();
+    }
+
+    //random number
+    function rn(min, max){
+      return Math.floor(Math.random()*(max-min)+min);
+    }
+    //random color
+    function rc(min, max){
+      var r = rn(min,max);
+      var g = rn(min,max);
+      var b = rn(min,max);
+      return `rgb(${r},${g},${b})`;
+    }
+  </script>
+</body>
+</html>

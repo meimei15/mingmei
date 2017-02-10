@@ -1,0 +1,155 @@
+body{
+  height:100%;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container:before {
+  content: ' ';
+  display: table;
+}
+.container:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  display: inline-block;
+  width: 300px;
+  height: 90px;
+  background: url("../AGE_files/bg-image/sgsj1.png") 0 0 no-repeat;
+  margin: 12px 0;
+  vertical-align: middle;
+}
+.welcome {
+  display: inline-block;
+  line-height: 46px;
+  margin: 12px;
+  font-size: 2em;
+  font-weight: normal;
+  padding-left: 12px;
+  border-left: 1px solid #aaa;
+  vertical-align: middle;
+}
+.main {
+  position: relative;
+}
+.video-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+
+.form-container {
+  width: 500px;
+  min-height: 200px;
+  border: 1px solid #aaa;
+  border-radius:10px;
+  margin: 200px auto;
+  margin-top:300px;
+  padding: 25px;
+  background: rgba(255,255,255, 0.7);
+  background-image:url("../AGE_files/bg-image/sgsj.png");
+  position: relative;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.control-label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  color:#0CE2A2;
+  font-weight:bold;
+  font-family: YouYuan;
+}
+.form-control {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.help-block {
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+.bg-default {
+  background: #999;
+  border-color: #777;
+}
+.bg-success {
+  background: #090;
+  border-color: #070;
+}
+
+.bg-danger {
+  background: #900;
+  border-color: #700;
+}
+
+
+.btn {
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  margin-left:10px;
+}
+.btn-success {
+  background: #090;
+  border-color: #070;
+}
+.btn-success:hover{
+  background: rgba(0, 153, 0, 0.36);
+}
+.btn-danger {
+  background: #900;
+  border-color: #700;
+}
+.denglu{
+  width:100px;
+}
+.rt{
+  float:right;
+  position: absolute;
+  bottom:5px;
+  right:20px;
+  color: #ff7c40;
+}
+.btn-block {
+  display: inline-block;
+  width:40px;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(239, 195, 44, 0.9);
+  text-decoration:none;
+}
+.btn-block:hover{
+  background: rgba(166, 239, 18, 0.9);
+}
+canvas {
+  background: #f0f0f0;
+  vertical-align: bottom;
+}
+
+.alert {
+  margin: 15px auto;
+  width:450px;
+  background: #fee;
+  color: rgba(228, 57, 60, 0.4);
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 2px;
+}

@@ -1,0 +1,36 @@
+
+.Gslider {
+	width: 620px;
+	height:307px;
+	position:relative;
+	overflow:hidden;
+}
+.Gslider .Gimgs {
+	position:absolute;
+	top: 0;  left: 0;
+	height:307px;
+    width:620px;
+}
+.Gslider .Gimgs li{
+	float:left;
+	z-index:0;
+}
+.Gslider .indexs {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+.Gslider .indexs li {
+    width: 155px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    background: #3e3e3e;
+    color: #fff;    
+    text-align: center;
+    cursor: pointer;
+
+}
+.Gslider .indexs li:hover,.Gslider .indexs li.hover {
+    background:#b61b1f;
+}
